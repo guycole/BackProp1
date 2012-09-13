@@ -20,7 +20,7 @@ import java.io.BufferedWriter;
  *   Java Developers Kit 1.3.1
  *
  * Legalise:  
-nn *   Copyright (C) 2002 Digital Burro, INC.
+ *   Copyright (C) 2002 Digital Burro, INC.
  *
  * Maintenance History:
  *   $Log: Tester.java,v $
