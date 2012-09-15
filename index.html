@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="BackProp1 : Simple 3 layer backpropagation neural network w/3 demo applications (point classifier, XOR, 0-9 recognition)" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>BackProp1</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/guycole/BackProp1">View on GitHub</a>
+
+          <h1 id="project_title">BackProp1</h1>
+          <h2 id="project_tagline">Simple 3 layer backpropagation neural network w/3 demo applications (point classifier, XOR, 0-9 recognition)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/guycole/BackProp1/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/guycole/BackProp1/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p>BackProp1 is a simple 3 layer backpropagation neural network.  There are 3 demonstration applications along w/a library you can easily include within your own projects.  I wrote BackProp1 in the late 1990's for a signal processing application and used it again a few years later as a image classifier.  BackProp1 is also available on <a href="http://backprop1.sourceforge.net">sourceforge</a>.</p>
+
+<ul>
+<li><p>demo1 is a point classifier.  GenerateDatum.java creates a training set which classifies points as above or below the line y=-5x+2, while Trainer.java performs attempts to train NN.  Tester.java generates random (x,y) points to test the network.  The output from Tester can be fed to <a href="http://www.gnuplot.info/">gnuplot</a> for a nice graph.</p></li>
+<li><p>demo2 is standard XOR problem, use Trainer.java to create network and Tester.java to validate</p></li>
+<li><p>demo3 performs character recognition of the digits 0-9 represented in a 5x5 matrix.  Use GenerateDatum.java to create training files, then Trainer.java to train NN.  Demo3 comes w/a nice UI to illustrate training and NN resilience to noise.  </p></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">BackProp1 maintained by <a href="https://github.com/guycole">guycole</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
