@@ -1,0 +1,23 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+}
+
+allprojects {
+  apply plugin: 'java'
+
+  repositories {
+    mavenCentral()
+  }
+
+  dependencies {
+    testCompile 'junit:junit:4.11'
+  }
+
+  version = '1.0-RELEASE'
+
+  jar {
+    manifest.attributes provider: 'gradle'
+  }
+}

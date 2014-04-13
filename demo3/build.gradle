@@ -1,0 +1,30 @@
+apply plugin: 'java'
+
+dependencies {
+  compile project(':network')
+}
+
+task generateDatum3(dependsOn: jar, type:JavaExec) {
+    description 'generate data for demo3'
+    main = 'com.digiburo.backprop1c.demo3.GenerateDatum'
+    classpath = sourceSets.main.runtimeClasspath
+    args '/tmp/demo3.trn'
+}
+
+task trainDatum3(dependsOn: generateDatum3, type:JavaExec) {
+    description 'demo3 training'
+    main = 'com.digiburo.backprop1c.demo3.Trainer'
+    classpath = sourceSets.main.runtimeClasspath
+    args '/tmp/demo3.trn'
+    args '/tmp/demo3.serial'
+}
+
+task runDemo3(dependsOn: trainDatum3, type:JavaExec) {
+    description 'invoke demo3'
+    println 'invoke demo3'
+
+    main = 'com.digiburo.backprop1c.demo3.BpDigitTestGui'
+    classpath = sourceSets.main.runtimeClasspath
+    args '/tmp/demo3.trn'
+    args '/tmp/demo3.serial'
+}
