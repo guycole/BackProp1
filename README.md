@@ -17,4 +17,6 @@ There is no gradle support for demo2, an XOR demo.
 
 A [link](http://www.digiburo.com/grafix/backProp3.png).
 
+<img src="http://www.digiburo.com/grafix/backProp3.png" border="0" align="middle" alt="demo3 screenshot"/>
+
 "gradle runDemo3" is an interactive digit recognizer.  It trains for the digits 0 through 9, and then allows one to change the pattern values then submit for classification.
